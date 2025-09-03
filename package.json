@@ -1,0 +1,14 @@
+{
+  "name": "pokemon-battle-simulator",
+  "version": "1.0.0",
+  "description": "A fully functioning Pokemon battle simulator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "battle": "node battle.js",
+    "test": "node test.js"
+  },
+  "keywords": ["pokemon", "battle", "simulator", "game"],
+  "author": "",
+  "license": "MIT"
+}
