@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Menu -->
+    <div id="main-menu" class="screen active">
+        <h1>Adventure Game</h1>
+        <button id="new-game-btn">New Game</button>
+        <button id="load-game-btn" disabled>Load Game</button>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="game-screen" class="screen">
+        <!-- Map Container -->
+        <div id="map-container">
+            <div id="map">
+                <div id="player" class="player"></div>
+                <div id="door" class="door hidden"></div>
+                <div id="fragments-container"></div>
+            </div>
+        </div>
+
+        <!-- Game UI -->
+        <div id="game-ui">
+            <div id="player-stats">
+                <div>Health: <span id="health">100</span></div>
+                <div>Fragments: <span id="fragment-count">0</span>/3</div>
+            </div>
+            <div id="upgrades">
+                <label>
+                    <input type="checkbox" id="map-upgrade" disabled>
+                    Map Upgrade (Shows Door Location)
+                </label>
+            </div>
+            <button id="menu-btn">Main Menu</button>
+        </div>
+
+        <!-- Level Info -->
+        <div id="level-info">
+            <h3>Level: <span id="current-level">1</span></h3>
+        </div>
+    </div>
+
+    <!-- Death Screen -->
+    <div id="death-screen" class="screen">
+        <div id="death-messages">
+            <p id="death-msg-1" class="death-message hidden">2 months later...</p>
+            <p id="death-msg-2" class="death-message hidden">You woke up in a coma.</p>
+        </div>
+    </div>
+
+    <!-- Fragment Collection Screen -->
+    <div id="fragment-screen" class="screen">
+        <h2>Personal Data Fragment Collected!</h2>
+        <p id="fragment-text"></p>
+        <button id="continue-btn">Continue</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
